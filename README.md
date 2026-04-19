@@ -2,7 +2,7 @@
 [🌿 Open Monitor on App](https://swaraj1313.users.earthengine.app/view/mangrove-monitor-gazibay-kenya)
 
 ## Overview
-An automated geospatial tracking architecture deploying Supervised Machine Learning to quantify decadal mangrove depletion and conservation recovery (2014–2025) in Gazi Bay, Kenya. 
+Developed a geospatial tracking architecture using Supervised Machine Learning (Random Forest). The model was trained on engineered spectral features (NDVI, NDWI) extracted from multispectral satellite imagery to autonomously classify coastal land-cover and quantify decadal ecological shifts. to quantify decadal mangrove depletion and conservation recovery (2014–2025) in Gazi Bay, Kenya. 
 The model was trained on engineered spectral features (NDVI, NDWI) extracted from multispectral satellite imagery to autonomously classify coastal land-cover.
 
 ## AI & Machine Learning Architecture
