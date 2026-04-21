@@ -4,7 +4,7 @@
 ## Will take a few moments for the layers to upload (click Layers and check layers from the dropdown)
 
 ## Overview
-Developed a geospatial tracking architecture using Supervised Machine Learning (Random Forest). The model was trained on engineered spectral features (NDVI, NDWI) extracted from multispectral satellite imagery to autonomously classify coastal land-cover and quantify decadal ecological shifts to quantify decadal mangrove depletion and conservation recovery (2014–2025) in Gazi Bay, Kenya.
+Developed a geospatial tracking architecture using Supervised Machine Learning (Random Forest). The model was trained on engineered spectral features (NDVI, NDWI) extracted from multispectral satellite imagery to autonomously classify coastal land-cover and quantify decadal ecological shifts to quantify decadal mangrove depletion and conservation recovery (2014–2025) in Gazi Bay, Kenya. The approach can be applied to other areas as well. For example, in agriculture, similar models can be trained to distinguish between crops grown in the same season (such as wheat, mustard, chickpea, and barley), helping estimate crop-wise sown area in hectares.
 
 Mangroves are hard to identify in satellite images because they look very similar to other green vegetation. From above, mangroves, forests, and even some wetland plants can all appear as dense green cover, so a normal satellite image cannot easily tell them apart.
 
@@ -19,12 +19,12 @@ Mangroves have a unique "spectral signature"—they reflect light in a specific 
 
 
 ## AI & Machine Learning Architecture
-* **Algorithm:** Supervised Random Forest Classifier (100 decision trees) built natively in Google Earth Engine.
+* **Algorithm:** Supervised Random Forest Classifier (100 decision trees).
 * **Feature Engineering:** Trained on multi-dimensional spectral signatures, combining standard optical bands with custom moisture and vegetation indices (NDWI, NDVI) derived from Landsat 8 and 9 Surface Reflectance data.
 * **Autonomous Classification:** The model successfully isolates intertidal mangroves from inland terrestrial forests, bare earth, and estuarine water, stripping out the "noise" common in basic thresholding methods.
 
 ## Scalability & Generalization
-This project is designed as a generalized environmental monitoring pipeline, not a localized script. 
+
 * **Temporal Transferability:** Rather than fitting separate, biased models for different years, a single classifier learns the fundamental spectral fingerprint of the ecosystem. This unified AI autonomously classifies unseen imagery across a 10-year temporal gap, ensuring a mathematically rigorous "apples-to-apples" comparison.
 * **Geographic Scalability:** Because the model relies on normalized planetary data (Landsat Collection 2) and physics-based spectral indices rather than hardcoded visual filters, the underlying architecture can be easily generalized to track intertidal ecosystems in other coastal regions globally.
 
@@ -39,7 +39,7 @@ The underlying methodology is transferable and can be adapted to:
 - Coastal ecosystem monitoring (mangroves, wetlands, salt marshes)  
 - Deforestation and afforestation tracking  
 - Urban expansion and land-use change  
-- Agricultural transitions and cropping patterns  
+- Agricultural transitions and cropping patterns by trainig model for identifieng different crops. 
 - Floodplain and water body dynamics
 
 - ## Platform
